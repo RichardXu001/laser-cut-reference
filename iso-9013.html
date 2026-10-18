@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO 9013 Cut Quality Classes for Laser Cutting</title>
+<meta name="description" content="ISO 9013 quality classes explained: cut edge perpendicularity, surface roughness ranges and how to specify a laser cut class on a drawing.">
+<link rel="canonical" href="https://richardxu001.github.io/laser-cut-reference/iso-9013.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap-bar">
+  <a class="brand" href="./">LaserCut<span>Reference</span></a>
+  <nav><a href="./">Home</a><a href="iso-9013.html" aria-current="page">ISO 9013</a><a href="gas-selection.html">Gas selection</a><a href="thickness-limits.html">Thickness limits</a><a href="glossary.html">Glossary</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>ISO 9013 Cut Quality Classes</h1>
+  <p class="lead">ISO 9013 defines thermal cutting quality classes by two measurable properties: perpendicularity (or perpendicularity tolerance) and mean roughness depth. A drawing that says "laser cut" without a class has defined nothing — a shop may legally deliver the worst acceptable edge.</p>
+
+  <h2>What the standard measures</h2>
+  <p>The standard expresses quality as ranges such as <strong>1–2</strong>, <strong>2–4</strong>, <strong>3–5</strong>, where the numbers are perpendicularity tolerance ranges in millimetres over the material thickness. Lower numbers mean a straighter edge. Surface roughness is quoted separately as Ra or Rz values.</p>
+
+  <table>
+    <thead><tr><th>Typical class</th><th>Perpendicularity range (mm)</th><th>Edge look</th><th>Typical use</th></tr></thead>
+    <tbody>
+      <tr><td>1–2</td><td>0.1–0.2</td><td>Straight, fine striations</td><td>Visible or weld-critical edges</td></tr>
+      <tr><td>2–4</td><td>0.2–0.4</td><td>Light taper, visible at close inspection</td><td>General fabrication</td></tr>
+      <tr><td>3–5</td><td>0.3–0.5</td><td>Noticeable taper, rough top edge</td><td>Non-visible structural parts</td></tr>
+    </tbody>
+  </table>
+
+  <p class="note">Exact ranges depend on the class number and the material thickness; the table above shows the common ranges quoted by machine builders. Always confirm against the current ISO 9013 text before writing a specification.</p>
+
+  <h2>How to specify a class</h2>
+  <p>Put the class on the drawing next to the edge symbol — for example, "ISO 9013, class 2–4". If the part goes to welding, specify the edge condition that the welding procedure needs, because a class number alone does not define weldability. For tolerance expectations by thickness, see the <a href="https://prolasercutting.com/blog/laser-cutting-tolerances-chart.html">tolerance chart</a>.</p>
+</main>
+<footer class="foot"><div class="wrap-bar"><p>Laser Cutting Reference · ISO 9013 summary.</p></div></footer>
+</body>
+</html>

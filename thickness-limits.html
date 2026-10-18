@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laser Cutting Thickness Limits by Power and Material</title>
+<meta name="description" content="Practical maximum laser cutting thickness by power (1.5–12 kW) and material (mild steel, stainless, aluminum, copper), and what limits the cut.">
+<link rel="canonical" href="https://richardxu001.github.io/laser-cut-reference/thickness-limits.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap-bar">
+  <a class="brand" href="./">LaserCut<span>Reference</span></a>
+  <nav><a href="./">Home</a><a href="iso-9013.html">ISO 9013</a><a href="gas-selection.html">Gas selection</a><a href="thickness-limits.html" aria-current="page">Thickness limits</a><a href="glossary.html">Glossary</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Thickness Limits</h1>
+  <p class="lead">"Maximum thickness" in a brochure is a laboratory edge case. The number that matters is the thickest section a shop can cut at production speed with acceptable edge quality — usually 60–70% of the brochure maximum.</p>
+
+  <table>
+    <thead><tr><th>Power</th><th>Mild steel (O₂)</th><th>Stainless (N₂)</th><th>Aluminum (N₂)</th><th>Copper/brass</th></tr></thead>
+    <tbody>
+      <tr><td>1.5 kW</td><td>4 mm</td><td>3 mm</td><td>3 mm</td><td>1.5 mm</td></tr>
+      <tr><td>2 kW</td><td>6 mm</td><td>4 mm</td><td>4 mm</td><td>2 mm</td></tr>
+      <tr><td>3 kW</td><td>8–10 mm</td><td>6–8 mm</td><td>5–6 mm</td><td>3 mm</td></tr>
+      <tr><td>6 kW</td><td>12–16 mm</td><td>10–12 mm</td><td>10–12 mm</td><td>4–6 mm</td></tr>
+      <tr><td>12 kW</td><td>25–30 mm</td><td>16–20 mm</td><td>16–20 mm</td><td>8 mm</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What limits the thickness</h2>
+  <ul>
+    <li><strong>Beam absorption</strong> — copper and brass absorb poorly at 1064 nm, so they are limited well before steel at the same power.</li>
+    <li><strong>Kerf ejection</strong> — below a certain pressure, molten metal cannot leave the kerf fast enough and dross forms on the underside.</li>
+    <li><strong>Edge quality</strong> — the cut may complete at 20 mm on a 6 kW machine, but with taper and rough striations that fail most drawings.</li>
+  </ul>
+
+  <p class="note">Ranges vary by machine builder and gas supply. For process settings, see the <a href="https://prolasercutting.com/blog/fiber-laser-cutting-thickness-and-speed-chart.html">thickness and speed chart</a>.</p>
+</main>
+<footer class="foot"><div class="wrap-bar"><p>Laser Cutting Reference · thickness limits.</p></div></footer>
+</body>
+</html>

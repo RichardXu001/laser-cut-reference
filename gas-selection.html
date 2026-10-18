@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assist Gas Selection for Laser Cutting — O₂, N₂ or Air</title>
+<meta name="description" content="Oxygen, nitrogen or compressed air for laser cutting: which gas to use by material and thickness, the edge quality trade-off and the cost impact.">
+<link rel="canonical" href="https://richardxu001.github.io/laser-cut-reference/gas-selection.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap-bar">
+  <a class="brand" href="./">LaserCut<span>Reference</span></a>
+  <nav><a href="./">Home</a><a href="iso-9013.html">ISO 9013</a><a href="gas-selection.html" aria-current="page">Gas selection</a><a href="thickness-limits.html">Thickness limits</a><a href="glossary.html">Glossary</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Assist Gas Selection</h1>
+  <p class="lead">The assist gas does two jobs: it blows molten metal out of the kerf, and in the case of oxygen it adds heat through an exothermic reaction. Choosing the gas is usually a choice between edge quality, speed and cost.</p>
+
+  <table>
+    <thead><tr><th>Gas</th><th>Materials</th><th>Edge result</th><th>Cost per cutting hour</th></tr></thead>
+    <tbody>
+      <tr><td>Oxygen (O₂)</td><td>Mild steel, 1–25 mm</td><td>Rough, oxidized edge; weldable after cleaning</td><td>Low (~$4)</td></tr>
+      <tr><td>Nitrogen (N₂)</td><td>Stainless, aluminum, 0.5–12 mm</td><td>Bright, oxide-free edge; ready for passivation</td><td>High (~$18)</td></tr>
+      <tr><td>Compressed air</td><td>Mild steel, aluminum (non-critical)</td><td>Rougher than N₂, some oxidation</td><td>Low (compressor)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Rules of thumb</h2>
+  <ul>
+    <li>Cutting mild steel for welding: oxygen gives the speed; clean the edge before welding.</li>
+    <li>Cutting stainless that goes to passivation or a food-grade finish: nitrogen, no question.</li>
+    <li>Cutting aluminum: nitrogen, with a clean oxide-free surface before piercing.</li>
+    <li>Cutting copper or brass: nitrogen at high pressure; expect slow speeds regardless of gas.</li>
+  </ul>
+
+  <p>Gas cost dominates the hourly rate when nitrogen is on — see the cost breakdown in the <a href="https://prolasercutting.com/blog/laser-cutting-cost-per-hour.html">cost per hour guide</a>.</p>
+</main>
+<footer class="foot"><div class="wrap-bar"><p>Laser Cutting Reference · gas selection.</p></div></footer>
+</body>
+</html>
